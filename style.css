@@ -20,6 +20,13 @@ body {
   background-color: #fff;
 }
 
+.fill {
+  background-image: url("https://source.unsplash.com/random/150x150");
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   body {
     flex-direction: column;
