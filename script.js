@@ -11,13 +11,17 @@ for(const empty of empties) {
     empty.addEventListener('drop', dragDrop)
 }
 
-function dragStart() {
-    this.className += ' hold' 
-    setTimeout(() => this.className = 'invisible', 0)
+class dragStart {
+    constructor() {
+        this.className += ' hold'
+        setTimeout(() => this.className = 'invisible', 0)
+    }
 }
 
-function dragEnd() {
-    this.className = 'fill'
+class dragEnd {
+    constructor() {
+        this.className = 'fill'
+    }
 }
 
 function dragOver(e) {
@@ -29,11 +33,15 @@ function dragEnter(e) {
     this.className += ' hovered'
 }
 
-function dragLeave() {
-    this.className = 'empty'
+class dragLeave {
+    constructor() {
+        this.className = 'empty'
+    }
 }
 
-function dragDrop() {
-    this.className = 'empty'
-    this.append(fill)
+class dragDrop {
+    constructor() {
+        this.className = 'empty'
+        this.append(fill)
+    }
 }
