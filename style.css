@@ -27,6 +27,10 @@ body {
   cursor: pointer;
 }
 
+.hold {
+  border: solid 5px #ccc;
+}
+
 @media (max-width: 800px) {
   body {
     flex-direction: column;
