@@ -12,6 +12,14 @@ body {
   margin: 0;
 }
 
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px #000;
+  background-color: #fff;
+}
+
 @media (max-width: 800px) {
   body {
     flex-direction: column;
